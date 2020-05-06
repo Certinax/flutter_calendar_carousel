@@ -48,4 +48,8 @@ class EventList<T> {
   List<T> getEvents(DateTime date) {
     return events != null && events.containsKey(date) ? events[date] : [];
   }
+
+  bool hasEvent(DateTime date) {
+    return events != null && events.containsKey(date);
+  }
 }
